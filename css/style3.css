@@ -1,0 +1,92 @@
+.container {
+    display: grid;
+    grid-template-columns: [first] 18% [line2] 18% [line3] 18% [line4] 18% [line5] 18%;
+    grid-template-rows: [row1-start] 300px [row1-end] 300px [third-line] 300px [last-line];
+    gap: 0.6rem;
+    border-style: solid;
+  }
+
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    background-color: white;
+  }
+
+  .item4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .item5 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .item6 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    background-color: white;
+  }
+
+  body {
+    font-size: 1.3rem;
+    height: 100vh;
+    background-image: url("../images/B.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  p {
+    display: block;
+    background-color: yellow;
+    border-style: solid;
+    width: fit-content;
+  }
